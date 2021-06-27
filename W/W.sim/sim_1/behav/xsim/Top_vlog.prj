@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../W.srcs/sources_1/new/decode.v" \
+"../../../../W.srcs/sources_1/new/time_change.v" \
+"../../../../W.srcs/sources_1/new/time_suit.v" \
+"../../../../W.srcs/sources_1/new/Top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

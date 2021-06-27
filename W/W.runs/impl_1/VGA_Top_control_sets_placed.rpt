@@ -1,0 +1,88 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Jun 25 00:03:29 2021
+| Host         : DESKTOP-0MPJ060 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file VGA_Top_control_sets_placed.rpt
+| Design       : VGA_Top
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    22 |
+| Unused register locations in slices containing registers |    44 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      8 |            7 |
+|    16+ |           13 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              78 |           15 |
+| No           | No                    | Yes                    |             106 |           19 |
+| No           | Yes                   | No                     |              84 |           14 |
+| Yes          | No                    | No                     |              32 |            4 |
+| Yes          | No                    | Yes                    |             112 |           23 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+---------------------------------+-------------------------------------------+------------------+----------------+
+|         Clock Signal        |          Enable Signal          |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++-----------------------------+---------------------------------+-------------------------------------------+------------------+----------------+
+|  clk_25MHz_BUFG             | nolabel_line64/hsync_r_i_1_n_0  | nolabel_line67/d1/count_reg[0]_0          |                1 |              2 |
+|  clk_25MHz_BUFG             | nolabel_line64/vsync_r_i_1_n_0  | nolabel_line67/d1/count_reg[0]_0          |                1 |              2 |
+|  clk_25MHz_BUFG             |                                 | nolabel_line64/SR                         |                4 |              8 |
+|  clk_choose                 | nolabel_line67/u1/u1/E[0]       | nolabel_line67/d1/count_reg[0]_0          |                1 |              8 |
+|  clk_choose                 | nolabel_line67/u1/u3/E[0]       | nolabel_line67/d1/count_reg[0]_0          |                1 |              8 |
+|  clk_choose                 | nolabel_line67/u1/u2/E[0]       | nolabel_line67/d1/count_reg[0]_0          |                1 |              8 |
+|  clk_choose                 | nolabel_line67/u2/u1/E[0]       | nolabel_line67/d1/count_reg[0]_0          |                1 |              8 |
+|  clk_choose                 | nolabel_line67/u2/u2/E[0]       | nolabel_line67/d1/count_reg[0]_0          |                1 |              8 |
+|  clk_choose                 | nolabel_line67/u2/u3/E[0]       | nolabel_line67/d1/count_reg[0]_0          |                1 |              8 |
+|  nolabel_line67/d2/d1Hz/CLK |                                 | nolabel_line67/d2/data[7]_i_2_n_0         |                1 |             16 |
+|  clk_choose                 | open_stop_IBUF                  | nolabel_line67/d1/count_reg[0]_0          |                2 |             16 |
+|  nolabel_line67/de/d1/CLK   |                                 |                                           |                2 |             18 |
+|  nolabel_line67/d1/clk_001s |                                 | nolabel_line67/d1/count_reg[0]_0          |                3 |             18 |
+|  nolabel_line67/d2/d1Hz/CLK |                                 |                                           |                3 |             20 |
+|  clk_25MHz_BUFG             | nolabel_line64/y_cnt[9]_i_1_n_0 | nolabel_line67/d1/count_reg[0]_0          |                6 |             20 |
+|  clk_25MHz_BUFG             | nolabel_line64/E[0]             | nolabel_line67/d1/count_reg[0]_0          |                7 |             24 |
+|  clk_25MHz_BUFG             |                                 | nolabel_line67/d1/count_reg[0]_0          |                8 |             26 |
+|  clk_IBUF_BUFG              | nolabel_line67/de/E[0]          |                                           |                4 |             32 |
+|  clk_IBUF_BUFG              |                                 | nolabel_line67/de/d1/cnt[19]_i_1__1_n_0   |                5 |             38 |
+|  clk_IBUF_BUFG              |                                 | nolabel_line67/d2/d1Hz/cnt[19]_i_1__0_n_0 |                5 |             38 |
+|  clk_IBUF_BUFG              |                                 |                                           |               10 |             40 |
+|  clk_IBUF_BUFG              |                                 | nolabel_line67/d1/count_reg[0]_0          |                7 |             46 |
++-----------------------------+---------------------------------+-------------------------------------------+------------------+----------------+
+
+

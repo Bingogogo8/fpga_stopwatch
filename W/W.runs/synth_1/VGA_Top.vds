@@ -1,0 +1,541 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jun 25 00:02:19 2021
+# Process ID: 7848
+# Current directory: F:/1Code/ISE/W/W.runs/synth_1
+# Command line: vivado.exe -log VGA_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_Top.tcl
+# Log file: F:/1Code/ISE/W/W.runs/synth_1/VGA_Top.vds
+# Journal file: F:/1Code/ISE/W/W.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source VGA_Top.tcl -notrace
+Command: synth_design -top VGA_Top -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4220 
+WARNING: [Synth 8-2611] redeclaration of ansi port data is not allowed [F:/1Code/ISE/W/W.srcs/sources_1/new/display.v:33]
+WARNING: [Synth 8-2611] redeclaration of ansi port sel is not allowed [F:/1Code/ISE/W/W.srcs/sources_1/new/display.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port clk_out is not allowed [F:/1Code/ISE/W/W.srcs/sources_1/new/divider_1kHz.v:29]
+WARNING: [Synth 8-2611] redeclaration of ansi port x_cnt is not allowed [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_counter.v:44]
+WARNING: [Synth 8-2611] redeclaration of ansi port hsync_r is not allowed [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_counter.v:45]
+WARNING: [Synth 8-2611] redeclaration of ansi port hsync_de is not allowed [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_counter.v:46]
+WARNING: [Synth 8-2611] redeclaration of ansi port y_cnt is not allowed [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_counter.v:47]
+WARNING: [Synth 8-2611] redeclaration of ansi port vsync_r is not allowed [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_counter.v:48]
+WARNING: [Synth 8-2611] redeclaration of ansi port vsync_de is not allowed [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_counter.v:49]
+WARNING: [Synth 8-2611] redeclaration of ansi port seg_sel is not allowed [F:/1Code/ISE/W/W.srcs/sources_1/new/VGA_Top.v:50]
+WARNING: [Synth 8-2611] redeclaration of ansi port seg_data is not allowed [F:/1Code/ISE/W/W.srcs/sources_1/new/VGA_Top.v:51]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 420.867 ; gain = 108.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'VGA_Top' [F:/1Code/ISE/W/W.srcs/sources_1/new/VGA_Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Vga_clkDivider' [F:/1Code/ISE/W/W.srcs/sources_1/new/Vga_clkDivider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Vga_clkDivider' (1#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/Vga_clkDivider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_counter' [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_counter.v:23]
+	Parameter LinePeriod bound to: 800 - type: integer 
+	Parameter H_SyncPulse bound to: 96 - type: integer 
+	Parameter Hde_start bound to: 144 - type: integer 
+	Parameter Hde_end bound to: 784 - type: integer 
+	Parameter FramePeriod bound to: 525 - type: integer 
+	Parameter V_SyncPulse bound to: 2 - type: integer 
+	Parameter Vde_start bound to: 33 - type: integer 
+	Parameter Vde_end bound to: 513 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_counter' (2#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Top' [F:/1Code/ISE/W/W.srcs/sources_1/new/Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'divider' [F:/1Code/ISE/W/W.srcs/sources_1/new/divider.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'divider' (3#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/divider.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [F:/1Code/ISE/W/W.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counterTo10' [F:/1Code/ISE/W/W.srcs/sources_1/new/counterTo10.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'counterTo10' (4#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/counterTo10.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counterTo6' [F:/1Code/ISE/W/W.srcs/sources_1/new/counterTo6.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counterTo6' (5#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/counterTo6.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (6#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'suber' [F:/1Code/ISE/W/W.srcs/sources_1/new/suber.v:23]
+INFO: [Synth 8-6157] synthesizing module 'suberFrom10' [F:/1Code/ISE/W/W.srcs/sources_1/new/suberFrom10.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'suberFrom10' (7#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/suberFrom10.v:24]
+INFO: [Synth 8-6157] synthesizing module 'suberFrom6' [F:/1Code/ISE/W/W.srcs/sources_1/new/suberFrom6.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'suberFrom6' (8#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/suberFrom6.v:23]
+INFO: [Synth 8-6157] synthesizing module 'suberFrom6_1' [F:/1Code/ISE/W/W.srcs/sources_1/new/suberFrom6_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'suberFrom6_1' (9#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/suberFrom6_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'suber' (10#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/suber.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [F:/1Code/ISE/W/W.srcs/sources_1/new/debounce.v:24]
+INFO: [Synth 8-6157] synthesizing module 'divider_1kHz' [F:/1Code/ISE/W/W.srcs/sources_1/new/divider_1kHz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'divider_1kHz' (11#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/divider_1kHz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (12#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/debounce.v:24]
+INFO: [Synth 8-6157] synthesizing module 'display' [F:/1Code/ISE/W/W.srcs/sources_1/new/display.v:22]
+	Parameter data0 bound to: 8'b11000000 
+	Parameter data1 bound to: 8'b11111001 
+	Parameter data2 bound to: 8'b10100100 
+	Parameter data3 bound to: 8'b10110000 
+	Parameter data4 bound to: 8'b10011001 
+	Parameter data5 bound to: 8'b10010010 
+	Parameter data6 bound to: 8'b10000010 
+	Parameter data7 bound to: 8'b11111000 
+	Parameter data8 bound to: 8'b10000000 
+	Parameter data9 bound to: 8'b10010000 
+INFO: [Synth 8-226] default block is never used [F:/1Code/ISE/W/W.srcs/sources_1/new/display.v:52]
+INFO: [Synth 8-226] default block is never used [F:/1Code/ISE/W/W.srcs/sources_1/new/display.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'display' (13#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/display.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (14#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_disp' [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_disp.v:23]
+	Parameter Hde_start bound to: 144 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vga_get' [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_get.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga_get' (15#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_get.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (11) of module 'vga_get' [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_disp.v:43]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (10) of module 'vga_get' [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_disp.v:43]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (11) of module 'vga_get' [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_disp.v:44]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (10) of module 'vga_get' [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_disp.v:44]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (11) of module 'vga_get' [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_disp.v:45]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (10) of module 'vga_get' [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_disp.v:45]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (11) of module 'vga_get' [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_disp.v:46]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (10) of module 'vga_get' [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_disp.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'vga_disp' (16#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/vga_disp.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Top' (17#1) [F:/1Code/ISE/W/W.srcs/sources_1/new/VGA_Top.v:23]
+WARNING: [Synth 8-3331] design display has unconnected port rst_n
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 456.500 ; gain = 144.223
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 456.500 ; gain = 144.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 456.500 ; gain = 144.223
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/1Code/ISE/W/W.srcs/constrs_1/new/Thank.xdc]
+Finished Parsing XDC File [F:/1Code/ISE/W/W.srcs/constrs_1/new/Thank.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/1Code/ISE/W/W.srcs/constrs_1/new/Thank.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 792.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 792.184 ; gain = 479.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 792.184 ; gain = 479.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 792.184 ; gain = 479.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "hsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sig_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sig_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "color" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 792.184 ; gain = 479.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     20 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 18    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 9     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 19    
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 37    
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module VGA_Top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module Vga_clkDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 2     
+Module divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module counterTo10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module counterTo6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module suberFrom10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module suberFrom6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module suberFrom6_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module divider_1kHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module Top 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_get 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module vga_disp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 9     
+	   3 Input     12 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "y_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_de0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "de/sig_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "de/sig_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line61/cnt_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (nolabel_line61/cnt_reg[1]) is unused and will be removed from module VGA_Top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 792.184 ; gain = 479.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 792.184 ; gain = 479.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 792.184 ; gain = 479.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 819.793 ; gain = 507.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 819.793 ; gain = 507.516
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 819.793 ; gain = 507.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 819.793 ; gain = 507.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 819.793 ; gain = 507.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 819.793 ; gain = 507.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 819.793 ; gain = 507.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    15|
+|3     |LUT1   |    16|
+|4     |LUT2   |    59|
+|5     |LUT3   |    43|
+|6     |LUT4   |    78|
+|7     |LUT5   |    62|
+|8     |LUT6   |   134|
+|9     |FDCE   |    95|
+|10    |FDPE   |    14|
+|11    |FDRE   |    97|
+|12    |IBUF   |     8|
+|13    |OBUF   |    26|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+---------------+------+
+|      |Instance         |Module         |Cells |
++------+-----------------+---------------+------+
+|1     |top              |               |   650|
+|2     |  nolabel_line61 |Vga_clkDivider |     4|
+|3     |  nolabel_line64 |vga_counter    |   251|
+|4     |  nolabel_line67 |Top            |   341|
+|5     |    d1           |divider        |    78|
+|6     |    d2           |display        |    72|
+|7     |      d1Hz       |divider_1kHz_6 |    35|
+|8     |    de           |debounce       |    48|
+|9     |      d1         |divider_1kHz   |    35|
+|10    |    u1           |counter        |    51|
+|11    |      u1         |counterTo10    |    13|
+|12    |      u2         |counterTo6     |    13|
+|13    |      u3         |counterTo10_4  |    13|
+|14    |      u4         |counterTo6_5   |    12|
+|15    |    u2           |suber          |    35|
+|16    |      u1         |suberFrom10    |     9|
+|17    |      u2         |suberFrom6     |     9|
+|18    |      u3         |suberFrom10_3  |     9|
+|19    |      u4         |suberFrom6_1   |     8|
+|20    |  nolabel_line70 |vga_disp       |    17|
+|21    |    v1           |vga_get        |     1|
+|22    |    v2           |vga_get_0      |     2|
+|23    |    v3           |vga_get_1      |     1|
+|24    |    v4           |vga_get_2      |     1|
++------+-----------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 819.793 ; gain = 507.516
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 819.793 ; gain = 171.832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 819.793 ; gain = 507.516
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 819.793 ; gain = 520.539
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'F:/1Code/ISE/W/W.runs/synth_1/VGA_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file VGA_Top_utilization_synth.rpt -pb VGA_Top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 819.793 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 25 00:02:51 2021...
